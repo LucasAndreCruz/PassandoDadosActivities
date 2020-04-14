@@ -8,10 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.Serializable;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button buttonEnviar;
 
+    Usuario usuario = new Usuario("Lucas", "lucasandre@gmail.com");
 
 
     @Override
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 intent.putExtra("nome", "Jamilton");
                 intent.putExtra("idade", 30);
-
+                intent.putExtra("objeto", usuario);
                 startActivity(intent);
 
             }
