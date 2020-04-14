@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 //Passar dados
 
                 intent.putExtra("nome", "Jamilton");
-                intent.putExtra("Idade", "30");
+                intent.putExtra("idade", 30);
 
                 startActivity(intent);
 
